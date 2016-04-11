@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0 }
+
+body { font-family: Tahoma, sans-serif; font-size: 12px; font-style: normal; font-weight: normal }
+.big_word { font-size: 1.5rem; border: 1px solid lightgray }
+
+nav { display: block; background-color: midnightblue; height: 39px }
+
+nav ul { list-style: none }
+nav ul::after { content: ''; display: block; clear: both }
+
+nav ul li {
+  color: ivory; font-size: 17px; line-height: 1.5rem;
+  display: block; float: left;
+  text-align: center;
+  height: 27px;
+  margin-top: 6px;
+  padding: 0 15px;
+  /* padding-bottom:4px;*/
+  border-right: 1px solid #587e93;
+}
+
+nav ul li:hover { background-color: cornflowerblue }
+
+section { height: 400px; background-color: #587e93 }
