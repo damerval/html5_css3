@@ -8,7 +8,7 @@ nav { display: block; background-color: #1d3644; min-height: 39px }
 nav ul { list-style: none }
 nav::after { content: ''; display: block; clear: both }
 
-nav ul li {   display: block; float: left }
+nav ul li { display: block; float: left }
 nav ul li::after {content: ' '; height: 25px; display: block; float: left; width: 1px; border-right: 1px solid gray; margin-top: -30px }
 
 nav ul li div.menu_item {
@@ -16,7 +16,7 @@ nav ul li div.menu_item {
   text-align: center; line-height: 1.7rem;
   height: 33px;
   padding: 0 10px;
-  margin: 3px 2px 0px 5px;
+  margin: 3px 2px 0 5px;
   /*border: 1px solid #587e93;*/
 }
 
