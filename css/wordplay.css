@@ -1,25 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
 * {margin: 0; padding: 0}
 
-body { font-family: SansSerif, sans-serif; font-size: 12pt; font-weight: 100 }
+body { font-family: 'Open Sans', sans-serif; font-size: 12pt; font-weight: 100; line-height: 1rem }
 
-nav { background-color: #2e2e5d; color: ivory; position: relative; }
+nav { background-color: #1d3644; color: #b6d9ec; position: relative; }
 
-nav ul { height: 40px; position: relative }
+nav ul { height: 39px }
 
 nav::after { content: ''; display: block; clear: both }
 
-nav ul li { display: block; float: left }
+nav ul li {
+  display: block; float: left;
+  padding: 3px; margin: 5px 5px 4px 5px;
+  position: relative
+}
+
+nav ul li:hover {
+  background-color: #59a8d0;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #381b51;
+}
 
 nav ul li div.menu_item {
-  /*border: 1px solid ivory;*/
-  margin: 5px 10px 10px 5px;
-  padding: 5px;
+  margin: 0 5px;
+  padding: 2px 0;
   position: relative;
 }
 
 nav ul li div.menu_item::after {
-  content: ''; display: block; float: left; height: 10px; width: 0;
-  border-right: 1px solid ivory;
+  content: ''; display: block; float: left; height: 20px; width: 0;
+  border-right: 1px solid #587e93;
   position: absolute;
-  top:5px; right: 0
+  top:1px; right: -14px
 }
+/*
+
+* { margin: 0; padding: 0 }
+
+body { font-family: Tahoma, sans-serif; font-size: 12px; font-style: normal; font-weight: normal }
+.big_word { font-size: 1.5rem; border: 1px solid lightgray }
+
+nav { display: block; background-color: #1d3644; min-height: 39px }
+
+nav ul { list-style: none }
+nav::after { content: ''; display: block; clear: both }
+
+nav ul li { display: block; float: left }
+nav ul li::after {
+  content: ' '; height: 25px; display: block; float: left; width: 1px;
+  border-right: 1px solid gray;
+  margin: -27px 0 0 100%;
+}
+nav ul li div.menu_item {
+  color: #b6d9ec; font-size: 17px;
+  text-align: center; line-height: 1.7rem;
+  height: 29px;
+  padding: 0 15px;
+  margin: 5px 2px 0 5px;
+  !*border: 1px solid #587e93;*!
+}
+
+nav ul li div.menu_item:hover { background-color: #59a8d0; border-bottom-left-radius: 3px; border-top-right-radius: 3px; color: #381b51 }
+
+section { height: 400px; background-color: #587e93 }
+*/
