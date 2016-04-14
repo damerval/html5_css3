@@ -1,9 +1,35 @@
-/*noinspection CssUnknownTarget*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,latin-ext);
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold_italic';
+  src: url('../fonts/opensans-bolditalic-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {margin: 0; padding: 0}
 
-body { font-family: 'Open Sans', sans-serif; font-size: 12pt; font-weight: 100; line-height: 1rem }
+body { font-family: open_sansregular, serif; font-size: 12pt; font-weight: 100; line-height: 1rem }
 
 nav { background-color: #1d3644; color: #b6d9ec; position: relative; }
 
@@ -13,8 +39,8 @@ nav::after { content: ''; display: block; clear: both }
 
 nav ul li {
   display: block; float: left;
-  margin: 5px 5px 0 10px ;
-  padding: 2px 0 5px 0;
+  margin: 7px 5px 0 10px ;
+  padding: 2px 0 4px 0;
   position: relative
 }
 
@@ -23,7 +49,7 @@ nav ul li:hover {
   border-bottom-left-radius: 3px;
   border-top-right-radius: 3px;
   color: #000;
-  cursor: cell;
+  cursor: default;
 }
 
 nav ul li div.menu_item {
