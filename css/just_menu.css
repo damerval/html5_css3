@@ -1,0 +1,20 @@
+* { margin:0; padding:0;}
+body {font-family: Tahoma, sans-serif; font-size: 12pt; text-transform: uppercase }
+
+li { background-color: darkred; display: block }
+
+a { color: ivory; text-decoration: none; }
+
+nav { background-color: yellow; padding: .3rem }
+
+ul { background-color: orangered; list-style: none; }
+
+nav > ul { padding: .3rem; }
+
+nav > ul::after { content: ''; display: block; clear: both;}
+
+nav > ul > li { display: block; float: left; position: relative }
+
+nav > ul > li > ul { position: absolute; top: 100% }
+
+nav > ul > li > ul > li { margin: .3rem }
