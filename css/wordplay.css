@@ -37,14 +37,14 @@ nav ul { height: 39px }
 
 nav::after { content: ''; display: block; clear: both }
 
-nav ul li {
+nav > ul > li {
   display: block; float: left;
   margin: 7px 5px 0 10px ;
   padding: 2px 0 4px 0;
   position: relative
 }
 
-nav ul li:hover {
+nav > ul > li:hover {
   background-color: #59a8d0;
   border-bottom-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -52,15 +52,21 @@ nav ul li:hover {
   cursor: default;
 }
 
-nav ul li div.menu_item {
+nav > ul > li > div.menu_item {
   margin: 0 5px;
   padding: 2px 0;
   position: relative;
 }
 
-nav ul li div.menu_item::after {
+nav > ul > li > div.menu_item::after {
   content: ''; display: block; float: left; height: 20px; width: 0;
   border-right: 1px solid #587e93;
   position: absolute;
   top:1px; right: -14px
 }
+
+nav > ul > li > ul {
+  position: absolute; display: none; list-style: none;
+}
+
+nav > ul > li:hover > ul { display: block }
